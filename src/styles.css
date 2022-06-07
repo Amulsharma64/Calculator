@@ -1,4 +1,74 @@
-.App {
+* {
+  margin: 0%;
+  padding: 0%;
+  /* color: white; */
   font-family: sans-serif;
   text-align: center;
+  box-sizing: border-box;
+}
+body {
+  background-color: #eee;
+}
+h1 {
+  padding: 30px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 5px blue, 0 0 5px blue;
+}
+.calculatorApp {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.Calculator {
+  width: 100%;
+  min-width: 320px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  font-weight: 300;
+}
+.Display {
+  padding: 16px;
+  text-align: right;
+  background: #000;
+  color: whitesmoke;
+  font-size: 24px;
+}
+.eval {
+  font-size: 14px;
+  color: #888;
+}
+button {
+  appearance: none;
+  border: none;
+  outline-style: none;
+  color: #fff;
+  font-size: 20px;
+  padding: 16px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+button :hover {
+  opacity: 0.9;
+}
+.Digits {
+  display: flex;
+  flex-wrap: wrap;
+}
+.Digits button {
+  flex: 1 1 33.333%;
+  max-width: 33.333%;
+  background: black;
+}
+.operaters {
+  display: flex;
+}
+.operaters button {
+  flex: 1 1 0%;
+  background: #335577;
+  font-weight: 700;
 }
