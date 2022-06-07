@@ -16,14 +16,15 @@ h1 {
 }
 .calculatorApp {
   display: flex;
+  min-height: 100vh;
   flex-direction: column;
   padding: 16px;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 
 .Calculator {
+  max-width: 100vh;
   width: 100%;
   min-width: 320px;
   background-color: #fff;

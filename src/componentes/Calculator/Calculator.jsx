@@ -20,6 +20,7 @@ export default function Calculator() {
 
   function Calculate() {
     setCal(eval(cal).toString());
+    setResult("");
   }
 
   function Delete() {
